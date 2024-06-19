@@ -12,4 +12,9 @@ class Bayar_model extends CI_Model
     {
         return $this->db->get('metode_bayar');
     }
+
+    public function simpanmetod($data = null)
+    {
+        $this->db->insert('metode_bayar', $data);
+    }
 }

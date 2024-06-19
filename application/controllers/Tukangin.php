@@ -95,6 +95,7 @@ class Tukangin extends CI_Controller
                 'alamat' => $this->input->post('alamat'),
                 'nomor' => $this->input->post('nomor'),
                 'image' => $gambar,
+                'tgl' => time()
 
             ];
             $this->bayar->simpanTransaksi($data);
@@ -248,6 +249,35 @@ class Tukangin extends CI_Controller
                 $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert">password berhasil di ubah</div>');
                 redirect('tukangin/changepassword');
             }
+        }
+    }
+
+    public function metodebayar()
+    {
+        $data['title'] = 'Metode bayar';
+        $data['user'] = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
+
+        $this->load->model('Bayar_model', 'bayar');
+        $data['metode'] = $this->bayar->getmbayar()->result_array();
+
+        $this->form_validation->set_rules('m_bayar', 'metode', 'required');
+
+        if ($this->form_validation->run() == false) {
+            # code...
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('templates/metodebayar', $data);
+            $this->load->view('templates/footer');
+        } else {
+            $data = [
+                'm_bayar' => $this->input->post('m_bayar', TRUE)
+            ];
+
+            $this->bayar->simpanmetod($data);
+            $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert">Metode pembayaran berhasil di tambahkan  </div>');
+            redirect('tukangin/metodebayar');
         }
     }
 }

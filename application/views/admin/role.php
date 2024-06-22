@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-lg-6">
 
-            <?= form_error('menu', '<div class="alert alert-danger" role="alert">', '</div>') ?>
+            <?= form_error('role', '<div class="alert alert-danger" role="alert">', '</div>') ?>
 
             <?= $this->session->flashdata('message'); ?>
 
@@ -30,8 +30,8 @@
                             <td><?= $r['role']; ?></td>
                             <td>
                                 <a href="<?= base_url('admin/roleaccess/') . $r['id'] ?>" class="badge badge-warning">access</a>
-                                <a href="" class="badge badge-success">edit</a>
-                                <a href="" class="badge badge-danger">hapus</a>
+                                <a href="<?= base_url('admin/editrole/') . $r['id'] ?>" class="badge badge-success"><i class="fas fa-edit"></i>edit</a>
+                                <a href="" class="badge badge-danger"><i class="fas fa-trash"></i> hapus</a>
                             </td>
                         </tr>
                         <?php $i++ ?>

@@ -29,7 +29,7 @@
                             <th scope="row"><?= $i; ?></th>
                             <td><?= $m['m_bayar']; ?></td>
                             <td>
-                                <a href="" class="badge badge-success">edit</a>
+                                <a href="<?= base_url('admin/editPembayaran/') . $m['id']; ?>" class="badge badge-success">edit</a>
                                 <a href="" class="badge badge-danger">hapus</a>
                             </td>
                         </tr>

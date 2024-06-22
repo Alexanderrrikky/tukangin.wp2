@@ -40,7 +40,7 @@
                                 <td><?= $t['metode']; ?></td>
                                 <td><?= $t['alamat']; ?></td>
                                 <td><?= $t['nomor']; ?></td>
-                                <td><?= date('d', $t['tgl']); ?></td>
+                                <td><?= date('l, d F Y', $t['tgl']); ?></td>
                                 <td>
                                     <picture>
                                         <source srcset="" type="image/svg+xml">

@@ -49,16 +49,61 @@ class Admin extends CI_Controller
         $data['title'] = 'Role';
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
+        $this->load->model('usermodel');
 
+        $data['role'] = $this->usermodel->userrole();
 
-        $data['role'] = $this->db->get('user_role')->result_array();
+        $this->form_validation->set_rules('role', 'Role', 'required|min_length[3]', [
+            'required' => 'Role harus diisi',
+            'min_length' => 'Role  terlalu pendek'
+        ]);
 
+        if ($this->form_validation->run() == false) {
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('templates/sidebar', $data);
-        $this->load->view('templates/topbar', $data);
-        $this->load->view('admin/role', $data);
-        $this->load->view('templates/footer');
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('admin/role', $data);
+            $this->load->view('templates/footer');
+        } else {
+            $data = [
+                'role' => $this->input->post('role', true)
+            ];
+            $this->usermodel->simpanRole($data);
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Tambah role berhasil</div>');
+            redirect('admin/role');
+        }
+    }
+
+    public function editrole()
+    {
+        $data['title'] = 'Edit Role';
+        $data['user'] = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
+        $this->load->model('usermodel');
+
+        $data['role'] = $this->usermodel->roleWhere(['id' => $this->uri->segment(3)])->result_array();
+
+        $this->form_validation->set_rules('role', 'Role', 'required|min_length[3]', [
+            'required' => 'Role harus diisi',
+            'min_length' => 'Role  terlalu pendek'
+        ]);
+
+        if ($this->form_validation->run() == false) {
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('admin/edit_role', $data);
+            $this->load->view('templates/footer');
+        } else {
+            $data = [
+                'role' => $this->input->post('role', true)
+            ];
+            $this->usermodel->updateRole(['id' => $this->input->post('id')], $data);
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Role Berhasil di Edit</div>');
+            redirect('admin/role');
+        }
     }
 
     public function roleAccess($role_id)
@@ -100,5 +145,37 @@ class Admin extends CI_Controller
             $this->db->delete('user_access_menu', $data);
         }
         $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">akses di ubah</div>');
+    }
+
+    public function editPembayaran()
+    {
+        $data['title'] = 'Edit Pembayaran';
+        $data['user'] = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
+        $this->load->model('usermodel');
+
+        $data['metode'] = $this->usermodel->metodeWhere(['id' => $this->uri->segment(3)])->result_array();
+
+        $this->form_validation->set_rules('metode', 'Metode', 'required|min_length[3]', [
+            'required' => 'Metode bayar harus diisi',
+            'min_length' => 'Metode bayar terlalu pendek'
+        ]);
+
+        if ($this->form_validation->run() == false) {
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('admin/editPembayaran', $data);
+            $this->load->view('templates/footer');
+        } else {
+            $data = [
+                'm_bayar' =>  $this->input->post('metode', true)
+            ];
+
+            $this->usermodel->updatePembayaran(['id' => $this->input->post('id')], $data);
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Metode pembayaran berhasil di ubah </div>');
+            redirect('tukangin/metodebayar');
+        }
     }
 }

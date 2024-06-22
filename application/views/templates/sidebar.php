@@ -3,8 +3,9 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('tukangin') ?>">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-fw fa-code"></i>
+        <div class="sidebar-brand-icon ">
+            <!-- <i class="fas fa-fw fa-code"></i> -->
+            <img width="35" height="33" src="<?= base_url('asset/img/logo.png') ?>" alt="">
         </div>
         <div class="sidebar-brand-text mx-3">TUKANGIN</div>
     </a>

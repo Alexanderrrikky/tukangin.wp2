@@ -34,6 +34,11 @@
                             <td><?= $a['role_id']; ?></td>
                             <td><?= $a['is_active']; ?></td>
                             <td><?= date('Y', $a['date_created']); ?></td>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" data-menu="">
+                                </div>
+                            </td>
                         </tr>
                     <?php } ?>
                 </tbody>

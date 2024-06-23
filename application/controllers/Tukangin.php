@@ -99,7 +99,7 @@ class Tukangin extends CI_Controller
 
             ];
             $this->bayar->simpanTransaksi($data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Jasa di proses</div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert">Jasa di proses</div>');
             redirect('tukangin/services');
         }
     }

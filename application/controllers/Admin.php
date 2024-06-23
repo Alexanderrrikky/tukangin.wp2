@@ -44,6 +44,15 @@ class Admin extends CI_Controller
         $this->load->view('templates/footer');
     }
 
+    public function hapustransaksi()
+    {
+        $this->load->model('Bayar_model', 'bayar');
+        $where = ['id' => $this->uri->segment(3)];
+        $this->bayar->hapustransaksi($where);
+        $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert"> Transaksi Berhasil di hapus</div>');
+        redirect('admin/transaksi');
+    }
+
     public function role()
     {
         $data['title'] = 'Role';
@@ -70,7 +79,7 @@ class Admin extends CI_Controller
                 'role' => $this->input->post('role', true)
             ];
             $this->usermodel->simpanRole($data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Tambah role berhasil</div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert"> Tambah role berhasil</div>');
             redirect('admin/role');
         }
     }
@@ -101,9 +110,18 @@ class Admin extends CI_Controller
                 'role' => $this->input->post('role', true)
             ];
             $this->usermodel->updateRole(['id' => $this->input->post('id')], $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Role Berhasil di Edit</div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert"> Role Berhasil di Edit</div>');
             redirect('admin/role');
         }
+    }
+
+    public function hapusrole()
+    {
+        $this->load->model('usermodel');
+        $where = ['id' => $this->uri->segment(3)];
+        $this->usermodel->hapusrole($where);
+        $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert"> Role Berhasil di hapus</div>');
+        redirect('admin/role');
     }
 
     public function roleAccess($role_id)
@@ -144,7 +162,7 @@ class Admin extends CI_Controller
         } else {
             $this->db->delete('user_access_menu', $data);
         }
-        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">akses di ubah</div>');
+        $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert">akses di ubah</div>');
     }
 
     public function editPembayaran()
@@ -174,8 +192,17 @@ class Admin extends CI_Controller
             ];
 
             $this->usermodel->updatePembayaran(['id' => $this->input->post('id')], $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Metode pembayaran berhasil di ubah </div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert">Metode pembayaran berhasil di ubah </div>');
             redirect('tukangin/metodebayar');
         }
+    }
+
+    public function hapuspembayaran()
+    {
+        $this->load->model('usermodel');
+        $where = ['id' => $this->uri->segment(3)];
+        $this->usermodel->hapuspembayaran($where);
+        $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert"> Metode Pembayaran Berhasil di hapus</div>');
+        redirect('tukangin/metodebayar');
     }
 }

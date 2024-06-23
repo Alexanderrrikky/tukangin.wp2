@@ -27,6 +27,11 @@ class Menu_model extends CI_Model
         $this->db->update('user_menu', $data, $where);
     }
 
+    public function hapusmenu($where = null)
+    {
+        $this->db->delete('user_menu', $where);
+    }
+
     public function submenuWhere($where)
     {
         return $this->db->get_where('user_sub_menu', $where);
@@ -35,5 +40,10 @@ class Menu_model extends CI_Model
     public function updatesubmenu($where = null, $data = null)
     {
         $this->db->update('user_sub_menu', $data, $where);
+    }
+
+    public function hapussubmenu($where = null)
+    {
+        $this->db->delete('user_sub_menu', $where);
     }
 }

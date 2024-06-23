@@ -30,7 +30,7 @@
                             <td><?= $m['menu']; ?></td>
                             <td>
                                 <a href="<?= base_url('menu/editmenu/') . $m['id'] ?>" class="badge badge-success">edit</a>
-                                <a href="<?= base_url('menu/hapusmenu/') . $m['id'] ?>" class="badge badge-danger">hapus</a>
+                                <a href="<?= base_url('menu/hapusmenu/') . $m['id'] ?>" onclick="return confirm('Kamu yakin akan menghapus <?= $title . ' ' . $m['menu']; ?> ?');" class="badge badge-danger"><i class="fas fa-trash"></i> hapus</a>
                             </td>
                         </tr>
                         <?php $i++ ?>

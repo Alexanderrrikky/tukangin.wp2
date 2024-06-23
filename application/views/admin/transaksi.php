@@ -4,7 +4,8 @@
     <h1 class="h3 mb-4 text-gray-800"> <?= $title; ?></h1>
 
     <div class="row">
-        <!-- <div class="col-lg-12"> -->
+
+        <?= $this->session->flashdata('message'); ?>
 
         <div class="table-responsive table-bordered col-sm-12  mr-auto mt-2">
             <div class="page-header">
@@ -35,7 +36,7 @@
                                 <td><?= $i++; ?></td>
                                 <td><?= $t['nama']; ?></td>
                                 <td><?= $t['jam']; ?></td>
-                                <td><?= $t['total_bayar']; ?></td>
+                                <td>Rp.<?= number_format($t['total_bayar']) ?></td>
                                 <td><?= $t['email']; ?></td>
                                 <td><?= $t['metode']; ?></td>
                                 <td><?= $t['alamat']; ?></td>
@@ -43,13 +44,13 @@
                                 <td><?= date('l, d F Y', $t['tgl']); ?></td>
                                 <td>
                                     <picture>
-                                        <source srcset="" type="image/svg+xml">
+                                        <source srcset="" type=" image/svg+xml">
                                         <img width="250" height="250" src="<?= base_url('asset/img/upload/') . $t['image']; ?>" class="img-fluid img-thumbnail" alt="...">
                                     </picture>
                                 </td>
                                 <td>
                                     <a href="" class="badge badge-success">konfirmasi</a>
-                                    <a href="" class="badge badge-danger">Batalkan</a>
+                                    <a href="<?= base_url('admin/hapustransaksi/') . $t['id'] ?>" onclick="return confirm('Kamu yakin akan membatalkan <?= $title . ' ' . $t['nama']; ?> ?');" class="badge badge-danger">Batalkan</a>
                                 </td>
                             </tr>
                         <?php } ?>

@@ -32,7 +32,7 @@ class Menu extends CI_Controller
         } else {
             // kalo pakai model bisa tapi cuma 1 baris jadi tidak perlu pakai model
             $this->db->insert('user_menu', ['menu' => $this->input->post('menu')]);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Menu baru berhasil di tambahkan </div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert">Menu baru berhasil di tambahkan </div>');
             redirect('menu');
         }
     }
@@ -63,9 +63,18 @@ class Menu extends CI_Controller
                 'menu' => $this->input->post('menu', true)
             ];
             $this->menu->updateMenu(['id' => $this->input->post('id')], $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Menu Berhasil di Edit</div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert"> Menu Berhasil di Edit</div>');
             redirect('menu');
         }
+    }
+
+    public function hapusmenu()
+    {
+        $this->load->model('Menu_model', 'menu');
+        $where = ['id' => $this->uri->segment(3)];
+        $this->menu->hapusmenu($where);
+        $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert"> Menu Management Berhasil di hapus</div>');
+        redirect('menu');
     }
 
 
@@ -101,7 +110,7 @@ class Menu extends CI_Controller
             ];
 
             $this->db->insert('user_sub_menu', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Sub menu baru berhasil di tambahkan </div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert"> Sub menu baru berhasil di tambahkan </div>');
             redirect('menu/submenu');
         }
     }
@@ -149,8 +158,17 @@ class Menu extends CI_Controller
                 'is_active' => $this->input->post('is_active')
             ];
             $this->menu->updatesubmenu(['id' => $this->input->post('id')], $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Sub Menu Berhasil di Edit</div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert"> Sub Menu Berhasil di Edit</div>');
             redirect('menu/submenu');
         }
+    }
+
+    public function hapussubmenu()
+    {
+        $this->load->model('Menu_model', 'menu');
+        $where = ['id' => $this->uri->segment(3)];
+        $this->menu->hapussubmenu($where);
+        $this->session->set_flashdata('message', '<div class="alert alert-success alert-message" role="alert"> Sub Menu Management Berhasil di hapus</div>');
+        redirect('menu/submenu');
     }
 }

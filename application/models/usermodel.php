@@ -42,6 +42,11 @@ class usermodel extends CI_Model
         $this->db->insert('user_role', $data);
     }
 
+    public function hapusrole($where = null)
+    {
+        $this->db->delete('user_role', $where);
+    }
+
     public function metodeWhere($where)
     {
         return $this->db->get_where('metode_bayar', $where);
@@ -50,5 +55,10 @@ class usermodel extends CI_Model
     public function updatePembayaran($where = null, $data = null)
     {
         $this->db->update('metode_bayar', $data, $where);
+    }
+
+    public function hapuspembayaran($where = null)
+    {
+        $this->db->delete('metode_bayar', $where);
     }
 }

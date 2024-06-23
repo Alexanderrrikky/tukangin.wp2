@@ -31,7 +31,7 @@
                             <td>
                                 <a href="<?= base_url('admin/roleaccess/') . $r['id'] ?>" class="badge badge-warning">access</a>
                                 <a href="<?= base_url('admin/editrole/') . $r['id'] ?>" class="badge badge-success"><i class="fas fa-edit"></i>edit</a>
-                                <a href="" class="badge badge-danger"><i class="fas fa-trash"></i> hapus</a>
+                                <a href="<?= base_url('admin/hapusrole/') . $r['id'] ?>" onclick="return confirm('Kamu yakin akan menghapus <?= $title . ' ' . $r['role']; ?> ?');" class="badge badge-danger"><i class="fas fa-trash"></i> hapus</a>
                             </td>
                         </tr>
                         <?php $i++ ?>

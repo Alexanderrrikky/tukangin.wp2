@@ -8,6 +8,11 @@ class Bayar_model extends CI_Model
         $this->db->insert('transaksi', $data);
     }
 
+    public function hapustransaksi($where = null)
+    {
+        $this->db->delete('transaksi', $where);
+    }
+
     public function getmbayar()
     {
         return $this->db->get('metode_bayar');

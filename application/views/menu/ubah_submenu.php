@@ -1,6 +1,9 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
-    <?= $this->session->flashdata('pesan'); ?>
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-4 text-gray-800"> <?= $title; ?></h1>
+    <?= $this->session->flashdata('message'); ?>
     <div class="row">
         <div class="col-lg-6">
             <?php if (validation_errors()) { ?>
@@ -8,7 +11,7 @@
                     <?= validation_errors(); ?>
                 </div>
             <?php } ?>
-            <?= $this->session->flashdata('pesan'); ?>
+            <?= $this->session->flashdata('message'); ?>
             <?php foreach ($subMenu as $sb) { ?>
                 <form action="<?= base_url('menu/editsubmenu'); ?>" method="post" enctype="multipart/form-data">
                     <div class="form-group">
@@ -45,4 +48,9 @@
             <?php } ?>
         </div>
     </div>
+</div>
+
+
+
+
 </div>

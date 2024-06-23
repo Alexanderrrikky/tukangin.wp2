@@ -36,7 +36,7 @@
                             <td><?= date('Y', $a['date_created']); ?></td>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" data-menu="">
+                                    <input class="form-check-input" type="checkbox" data-menu="" checked>
                                 </div>
                             </td>
                         </tr>

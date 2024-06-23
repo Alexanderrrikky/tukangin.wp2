@@ -42,7 +42,7 @@
                             <td><?= $sm['is_active']; ?></td>
                             <td>
                                 <a href="<?= base_url('menu/editsubmenu/') . $sm['id'] ?>" class="badge badge-success">edit</a>
-                                <a href="" class="badge badge-danger">hapus</a>
+                                <a href="<?= base_url('menu/hapussubmenu/') . $sm['id'] ?>" onclick="return confirm('Kamu yakin akan menghapus <?= $title . ' ' . $sm['title']; ?> ?');" class="badge badge-danger"><i class="fas fa-trash"></i> hapus</a>
                             </td>
                         </tr>
                         <?php $i++ ?>

@@ -8,9 +8,9 @@
 <!-- Custom scripts for all pages-->
 <script src="<?= base_url('asset/') ?>js/sb-admin-2.min.js"></script>
 
-<!-- <script>
+<script>
     $('.alert-message').alert().delay(3500).slideUp('slow');
-</script> -->
+</script>
 
 </body>
 

@@ -21,7 +21,7 @@
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
+                        <th scope="col">No</th>
                         <th scope="col">Title</th>
                         <th scope="col">Menu</th>
                         <th scope="col">url</th>

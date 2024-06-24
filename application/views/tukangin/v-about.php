@@ -21,7 +21,7 @@
 	<div class="container px-5 my-5">
 		<div class="row gx-5 align-items-center">
 			<div class="col-lg-6">
-				<img class="img-fluid rounded mb-5 mb-lg-0" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
+				<img class="img-fluid rounded mb-5 mb-lg-0" src="https://png.pngtree.com/background/20230426/original/pngtree-two-wooden-men-are-working-in-a-tool-building-set-picture-image_2493301.jpg" alt="..." />
 			</div>
 			<div class="col-lg-6">
 				<h2 class="fw-bolder">Landasan Kami</h2>
@@ -37,7 +37,7 @@
 	<div class="container px-5 my-5">
 		<div class="row gx-5 align-items-center">
 			<div class="col-lg-6 order-first order-lg-last">
-				<img class="img-fluid rounded mb-5 mb-lg-0" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
+				<img class="img-fluid rounded mb-5 mb-lg-0" src="https://cdn.pixabay.com/photo/2018/01/19/07/58/shaking-hands-3091908_640.jpg" alt="..." />
 			</div>
 			<div class="col-lg-6">
 				<h2 class="fw-bolder">Perkembangan Kami</h2>

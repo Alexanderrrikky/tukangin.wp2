@@ -4,12 +4,10 @@
     			<div class="col-lg-8 col-xl-7 col-xxl-6">
     				<div class="my-5 text-center text-xl-start">
     					<h1 class="display-5 fw-bolder text-white mb-2">
-    						A Bootstrap 5 template for modern businesses
+    						Tukangin adalah solusi masalah pembangunan anda.
     					</h1>
     					<p class="lead fw-normal text-white-50 mb-4">
-    						Quickly design and customize responsive mobile-first sites
-    						with Bootstrap, the world’s most popular front-end open source
-    						toolkit!
+    						Setiap sentuhan memiliki cerita, kami tukang membangun mimpi menjadi nyata
     					</p>
     					<div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
     						<a class="btn btn-primary btn-lg px-4 me-sm-3" href="<?php echo base_url() . 'tukangin/mulai' ?>">Pesan Sekarang</a>
@@ -38,8 +36,7 @@
     						</div>
     						<h2 class="h5">Tukang Berpengalaman</h2>
     						<p class="mb-0">
-    							Paragraph of text beneath the heading to explain the
-    							heading. Here is just a bit more text.
+    							Mempunyai Tukang Berkualitas Yang Mempunyai Jam Terbang Tinggi
     						</p>
     					</div>
     					<div class="col mb-5 h-100">
@@ -48,8 +45,7 @@
     						</div>
     						<h2 class="h5">Alat yang Mendukung Dan priper</h2>
     						<p class="mb-0">
-    							Paragraph of text beneath the heading to explain the
-    							heading. Here is just a bit more text.
+    							Alat - Alat Yang Digunakan Sudah Memakai Alat Tukang Profesional Yang Pastinya Mendukung Pekerjaan Membangun Rumah Anda
     						</p>
     					</div>
     					<div class="col mb-5 mb-md-0 h-100">
@@ -58,8 +54,7 @@
     						</div>
     						<h2 class="h5">Bahan yang Berkualitas</h2>
     						<p class="mb-0">
-    							Paragraph of text beneath the heading to explain the
-    							heading. Here is just a bit more text.
+    							Memakai Bahan Premium Berkualitas Tinggi Yang Akan Membuat Bangunan Kokoh Dan Indah
     						</p>
     					</div>
     					<div class="col h-100">
@@ -68,8 +63,7 @@
     						</div>
     						<h2 class="h5">Hasil yang Memuaskan</h2>
     						<p class="mb-0">
-    							Paragraph of text beneath the heading to explain the
-    							heading. Here is just a bit more text.
+    							Hasil Memuaskan Susuai Desain Yang Diberikan Costumer
     						</p>
     					</div>
     				</div>
@@ -84,9 +78,7 @@
     			<div class="col-lg-10 col-xl-7">
     				<div class="text-center">
     					<div class="fs-4 mb-4 fst-italic">
-    						"Working with Start Bootstrap templates has saved me tons of
-    						development time when building new projects! Starting with a
-    						Bootstrap template just makes things easier!"
+    						"Apa itu gym? Jangan membuatku tertawa kawan, di saat latihanmu dibayar per bulan, di saat itulah badanku terbentuk oleh gaji harian"
     					</div>
     					<div class="d-flex align-items-center justify-content-center">
     						<img width="40" height="40" class="rounded-circle me-3 ceo" src="<?php echo base_url('asset/img/rikky.jpg'); ?>" alt="..." />

@@ -4,29 +4,24 @@
 <!-- Page Content-->
 <section class="py-5">
 	<div class="container px-5">
-		<h1 class="fw-bolder fs-5 mb-4">Company Blog</h1>
 		<div class="card border-0 shadow rounded-3 overflow-hidden">
 			<div class="card-body p-0">
 				<div class="row gx-0">
 					<div class="col-lg-6 col-xl-5 py-lg-5">
 						<div class="p-4 p-md-5">
-							<div class="badge bg-primary bg-gradient rounded-pill mb-2">
-								News
-							</div>
-							<div class="h2 fw-bolder">Article heading goes here</div>
+							<div class="h2 fw-bolder">Tukang Bukan Sekadar Profesi, Tapi Seni Yang Dikuasai</div>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Similique delectus ab doloremque, qui doloribus ea
-								officiis...
+								Tukang handal, hasil maksimal!
+								Bangunan kokoh, terpercaya, dan terjamin!
+								Solusi tepat untuk kebutuhan bangunan Anda!
+								Kerja cepat, rapi, dan harga bersahabat!
+								Membangun impian Anda menjadi kenyataan!
+
 							</p>
-							<a class="stretched-link text-decoration-none" href="#!">
-								Read more
-								<i class="bi bi-arrow-right"></i>
-							</a>
 						</div>
 					</div>
 					<div class="col-lg-6 col-xl-7">
-						<div class="bg-featured-blog" style="background-image: url('https://dummyimage.com/700x350/343a40/6c757d');"></div>
+						<div class="bg-featured-blog" style="background-image: url('https://png.pngtree.com/background/20230613/original/pngtree-person-with-welder-trying-to-create-metal-picture-image_3416107.jpg');"></div>
 					</div>
 				</div>
 			</div>
@@ -107,11 +102,10 @@
 							News
 						</div>
 						<a class="text-decoration-none link-dark stretched-link" href="">
-							<div class="h5 card-title mb-3">Perbaikan saluran Air Di Lunsa</div>
+							<div class="h5 card-title mb-3">Perbaikan Saluran Air </div>
 						</a>
 						<p class="card-text mb-0">
-							Some quick example text to build on the card title and make
-							up the bulk of the card's content.
+							Saluran air mampet? Kami ahlinya! Perbaikan cepat, bersih, dan bergaransi
 						</p>
 					</div>
 					<div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -131,20 +125,18 @@
 			</div>
 			<div class="col-lg-4 mb-5">
 				<div class="card h-100 shadow border-0">
-					<img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
+					<img class="card-img-top" src="https://asset.kompas.com/crops/q10_SPwqoUwEZjSFxTwAtcETCZU=/100x67:900x600/750x500/data/photo/2022/08/01/62e74ec9017d7.jpg" alt="..." />
 					<div class="card-body p-4">
 						<div class="badge bg-primary bg-gradient rounded-pill mb-2">
 							Media
 						</div>
 						<a class="text-decoration-none link-dark stretched-link" href="#!">
 							<div class="h5 card-title mb-3">
-								Another blog post title
+								Layanan Mural & cat
 							</div>
 						</a>
 						<p class="card-text mb-0">
-							This text is a bit longer to illustrate the adaptive height
-							of each card. Some quick example text to build on the card
-							title and make up the bulk of the card's content.
+							Ubah dindingmu jadi karya seni! Jasa mural profesional, desain unik & harga terjangkau
 						</p>
 					</div>
 					<div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -164,20 +156,19 @@
 			</div>
 			<div class="col-lg-4 mb-5">
 				<div class="card h-100 shadow border-0">
-					<img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..." />
+					<img class="card-img-top" src="https://asset-a.grid.id/crop/0x0:0x0/945x630/photo/2023/01/13/milivoj-kuhar-te48tpzdcu8-unspla-20230113125616.jpg" alt="..." />
 					<div class="card-body p-4">
 						<div class="badge bg-primary bg-gradient rounded-pill mb-2">
 							News
 						</div>
 						<a class="text-decoration-none link-dark stretched-link" href="#!">
 							<div class="h5 card-title mb-3">
-								The last blog post title is a little bit longer than the
+								Renovasi Rumah Impian
 								others
 							</div>
 						</a>
 						<p class="card-text mb-0">
-							Some more quick example text to build on the card title and
-							make up the bulk of the card's content.
+							Kualitas terjamin, hasil memuaskan. Jasa renovasi rumah berpengalaman, garansi & layanan purna jual
 						</p>
 					</div>
 					<div class="card-footer p-4 pt-0 bg-transparent border-top-0">

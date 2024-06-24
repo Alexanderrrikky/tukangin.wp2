@@ -11,26 +11,26 @@
 		<div class="row gx-5">
 			<div class="col-lg-6">
 				<div class="position-relative mb-5">
-					<img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-					<a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
+					<img class="img-fluid rounded-3 mb-3" src="https://alparsa.co.id/wp-content/uploads/2016/12/Jasa-Renovasi-Rumah-di-Cikarang-2.jpg" alt="..." />
+
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="position-relative mb-5">
-					<img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-					<a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
+					<img class="img-fluid rounded-3 mb-3" src="https://utara.jakarta.go.id/portal/uploads/news/1698718284_26a1dde6017333153271.jpeg" alt="..." />
+
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="position-relative mb-5 mb-lg-0">
-					<img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-					<a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
+					<img class="img-fluid rounded-3 mb-3" src="https://www.tukangku.xyz/wp-content/uploads/2021/01/renovasi-rumah-1.jpg" alt="..." />
+
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="position-relative">
-					<img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-					<a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
+					<img class="img-fluid rounded-3 mb-3" src="https://awsimages.detik.net.id/community/media/visual/2015/09/15/34b9a35c-7a9a-4ab8-a1c8-4a6f16fd8bf1_169.jpg?w=600&q=90" alt="..." />
+
 				</div>
 			</div>
 		</div>

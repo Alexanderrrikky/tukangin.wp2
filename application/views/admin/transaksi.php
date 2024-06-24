@@ -15,7 +15,7 @@
                 <table class="table mt-3" id="table-datatable">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th>No</th>
                             <th>Jasa</th>
                             <th>jam</th>
                             <th>Total bayar</th>

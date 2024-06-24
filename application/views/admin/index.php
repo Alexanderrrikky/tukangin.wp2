@@ -14,7 +14,7 @@
             <table class="table mt-3">
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th>No</th>
                         <th>Nama Anggota</th>
                         <th>Email</th>
                         <th>Role ID</th>

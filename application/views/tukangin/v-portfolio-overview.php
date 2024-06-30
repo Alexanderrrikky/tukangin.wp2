@@ -6,7 +6,7 @@
 	<div class="container px-5 my-5">
 		<div class="text-center mb-5">
 			<h1 class="fw-bolder">Our Work</h1>
-			<p class="lead fw-normal text-muted mb-0">Company portfolio</p>
+			<p class="lead fw-normal text-muted mb-0"></p>
 		</div>
 		<div class="row gx-5">
 			<div class="col-lg-6">

@@ -89,7 +89,7 @@
 			<div class="col mb-5">
 				<div class="text-center">
 					<img class="img-fluid rounded-circle mb-4 px-4" src="<?= base_url('asset/img/tio.jpg') ?>" alt="..." />
-					<h5 class="fw-bolder">Malvina Cilla</h5>
+					<h5 class="fw-bolder">Tiyo Fernando Naklui</h5>
 					<div class="fst-italic text-muted">CTO</div>
 				</div>
 			</div>

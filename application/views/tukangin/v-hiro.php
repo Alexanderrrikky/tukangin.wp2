@@ -10,7 +10,7 @@
     						Setiap sentuhan memiliki cerita, kami tukang membangun mimpi menjadi nyata
     					</p>
     					<div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-    						<a class="btn btn-primary btn-lg px-4 me-sm-3" href="<?php echo base_url() . 'tukangin/mulai' ?>">Pesan Sekarang</a>
+    						<a class="btn btn-primary btn-lg px-4 me-sm-3" href="<?php echo base_url() . 'tukangin/services' ?>">Pesan Sekarang</a>
     						<a class="btn btn-outline-light btn-lg px-4" href="<?php echo base_url() . 'tukangin/about' ?>">Tetang Kami</a>
     					</div>
     				</div>

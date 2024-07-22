@@ -12,7 +12,7 @@ class Tukangin extends CI_Controller
 
     public function index()
     {
-        $data['judul'] = "Halaman Depan";
+        $data['title'] = "Home";
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
         $this->load->view('tukangin/v-header', $data);
@@ -24,7 +24,7 @@ class Tukangin extends CI_Controller
     {
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
-        $data['judul'] = "Halaman About";
+        $data['title'] = "About";
         $this->load->view('tukangin/v-header', $data);
         $this->load->view('tukangin/v-about', $data);
         $this->load->view('tukangin/v-footer', $data);
@@ -35,7 +35,7 @@ class Tukangin extends CI_Controller
     {
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
-        $data['judul'] = "Halaman contact";
+        $data['title'] = "Contact";
         $this->load->view('tukangin/v-header', $data);
         $this->load->view('tukangin/v-contact', $data);
         $this->load->view('tukangin/v-footer', $data);
@@ -43,7 +43,7 @@ class Tukangin extends CI_Controller
 
     public function services()
     {
-        $data['judul'] = "Halaman servis";
+        $data['title'] = "Services";
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
 
@@ -109,7 +109,7 @@ class Tukangin extends CI_Controller
     {
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
-        $data['judul'] = "Halaman blok-hoom";
+        $data['title'] = "Blog";
         $this->load->view('tukangin/v-header', $data);
         $this->load->view('tukangin/v-blok-hoom', $data);
         $this->load->view('tukangin/v-footer', $data);
@@ -120,7 +120,7 @@ class Tukangin extends CI_Controller
     {
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
-        $data['judul'] = "Halaman portfolio-overview";
+        $data['title'] = "Portfolio";
         $this->load->view('tukangin/v-header', $data);
         $this->load->view('tukangin/v-portfolio-overview', $data);
         $this->load->view('tukangin/v-footer', $data);
@@ -129,21 +129,13 @@ class Tukangin extends CI_Controller
     {
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
-        $data['judul'] = "Halaman portfolio-item";
+        $data['title'] = "Portfolio-item";
         $this->load->view('tukangin/v-header', $data);
         $this->load->view('tukangin/v-portfolio-item', $data);
         $this->load->view('tukangin/v-footer', $data);
     }
 
-    public function mulai()
-    {
-        $data['user'] = $this->db->get_where('user', ['email' =>
-        $this->session->userdata('email')])->row_array();
-        $data['judul'] = "Halaman portfolio-item";
-        $this->load->view('tukangin/v-header', $data);
-        $this->load->view('tukangin/v-services', $data);
-        $this->load->view('tukangin/v-footer', $data);
-    }
+
 
 
     public function profile()

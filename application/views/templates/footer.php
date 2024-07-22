@@ -56,7 +56,7 @@
            let fileName = $(this).val().split('\\').pop();
            $(this).next('.custom-file-label').addClass("selected").html(fileName);
        });
-       $('.alert-message').alert().delay(3500).slideUp('slow');
+       $('.alert-message').alert().delay(1500).slideUp('slow');
 
 
 

@@ -37,28 +37,42 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() . 'tukangin' ?>">Home</a>
+                            <a class="nav-link <?php if ($title == 'Home') {
+                                                    echo "active";
+                                                } ?>" href="<?= base_url() . 'tukangin' ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() . 'tukangin/about' ?>">About</a>
+                            <a class="nav-link <?php if ($title == 'About') {
+                                                    echo "active";
+                                                } ?>" href="<?= base_url() . 'tukangin/about' ?>">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() . 'tukangin/contact' ?>">Contact</a>
+                            <a class="nav-link <?php if ($title == 'Contact') {
+                                                    echo "active";
+                                                } ?>" href="<?= base_url() . 'tukangin/contact' ?>">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() . 'tukangin/services' ?>">services</a>
+                            <a class="nav-link <?php if ($title == 'Services') {
+                                                    echo "active";
+                                                } ?>" href="<?= base_url() . 'tukangin/services' ?>">services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() . 'tukangin/blockHoom' ?>">Blog</a>
+                            <a class="nav-link <?php if ($title == 'Blog') {
+                                                    echo "active";
+                                                } ?>" href="<?= base_url() . 'tukangin/blockHoom' ?>">Blog</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
                                 <li>
-                                    <a class="dropdown-item" href="<?= base_url() . 'tukangin/overview' ?>">Portfolio Overview</a>
+                                    <a class="dropdown-item <?php if ($title == 'Portfolio') {
+                                                                echo "active";
+                                                            } ?>" href="<?= base_url() . 'tukangin/overview' ?>">Portfolio Overview</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="<?= base_url() . 'tukangin/item' ?>">Portfolio Item</a>
+                                    <a class="dropdown-item <?php if ($title == 'Portfolio-item') {
+                                                                echo "active";
+                                                            } ?>" href="<?= base_url() . 'tukangin/item' ?>">Portfolio Item</a>
                                 </li>
                             </ul>
                         </li>
